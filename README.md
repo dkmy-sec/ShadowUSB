@@ -1,2 +1,2 @@
 # ShadowUSB
-ShadowUSB is a covert tracking tool designed to monitor and log interactions with untrusted documents and USB drives.
+ShadowUSB is a covert tracking tool designed to monitor and log interactions with untrusted documents and USB drives. By embedding beaconized documents, ShadowUSB tracks when and where files are accessed, offering valuable insights into unauthorized usage. Whether plugged into an unknown machine or opening potentially risky documents, ShadowUSB silently captures the event, providing detailed analytics on user behavior. Ideal for cybersecurity professionals and organizations looking to enhance their threat detection capabilities, ShadowUSB adds an extra layer of security by shedding light on otherwise invisible activities.
