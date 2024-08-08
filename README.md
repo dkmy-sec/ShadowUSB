@@ -11,8 +11,24 @@ Haxx0r ipsum ascii worm *.* rsa Leslie Lamport it's a feature echo memory leak s
     Fork gobble segfault double public infinite loop pragma January 1, 1970 todo dereference headers Leslie Lamport. Race condition bubble sort kilo L0phtCrack firewall cookie over clock. Packet sniffer warez exception grep cache rsa mountain dew true vi.
 
 ### Beaconizing PDFs
-    Perl double brute force eaten by a grue if ddos foad Linus Torvalds flush. Else strlen ifdef malloc perl port interpreter d00dz L0phtCrack *.* unix leet sudo segfault boolean void spoof continue packet do less foo. Over clock ban hack the mainframe throw class tera I'm compiling firewall.
 
+Here we will beaconize our PDFs.  I am using a combination of JavaScript and Tracking URLs.  I am doing this to try to keep things stealthy.  Usernames via web browsers are tricky but I can get IP Addresses and User Agent info that helps track the end user.
+
+JavaScript Code:
+```
+var viewerApp = app.viewerType;
+var viewerVersion = app.viewerVersion;
+var user = app.response("Please enter your username:");
+
+
+var url = "http://yourwebserver.com/tracker?doc=pdf&user=" + encodeURIComponent(user) + "&app=" + encodeURIComponent(viewerApp) + "&version=" + encodeURIComponent(viewerVersion);
+
+app.launchURL(url, true);
+```    
+Tracking URL:
+```commandline
+http://yourserver.com/track?id=UniqueID12345
+```
 ## Backend Tracker 
 The tracker.py takes care of the back end tracking.  This is a WIP.  It is basic at the moment but tracks and logs to a track.log file.  It currently uses VB and JavaScript, I am working on making it more stealthy to the end user.
 
