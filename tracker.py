@@ -52,6 +52,7 @@ def tracker():
 
     return jsonify(status="success", message="Tracking logged"), 200
 
+
 @app.route('/logs', methods=['GET'])
 def view_logs():
     log_entries = []
