@@ -104,7 +104,7 @@ def view_logs():
                 <td>{{ entry.user }}</td>
                 <td>{{ entry.ip_address }}</td>
                 <td>{{ entry.application }}</td>
-                <td>{{ entry.version }}</td>
+                <td>{{ entry.application_version }}</td>
                 <td>{{ entry.user_agent }}</td>
                 <td>{{ entry.document }} {{ entry.query_params }}</td>
             </tr>
