@@ -30,7 +30,7 @@ def tracker():
     # Create a structured log entry
     log_entry = {
         "timestamp": timestamp,
-        "ip address": ip_address,
+        "ip_address": ip_address,
         "tracking_id": tracking_id,
         "user": user,
         "document": doc,
