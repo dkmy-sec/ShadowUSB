@@ -35,7 +35,7 @@ def tracker():
         "user": user,
         "document": doc,
         "application": app_name,
-        "application_version": version,
+        "version": version,
         "user_agent": user_agent,
         "headers": headers,
         "query_params": query_params
@@ -104,7 +104,7 @@ def view_logs():
                 <td>{{ entry.user }}</td>
                 <td>{{ entry.ip_address }}</td>
                 <td>{{ entry.application }}</td>
-                <td>{{ entry.application_version }}</td>
+                <td>{{ entry.version }}</td>
                 <td>{{ entry.user_agent }}</td>
                 <td>{{ entry.document }} {{ entry.query_params }}</td>
             </tr>
